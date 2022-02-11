@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.comment {
+  width: 40%;
+  height: 100px;
+  padding: 10px;
+  border-left: 6px solid #095484;
+  background-color: #d0e2bc;
+  font: 1.4em/1.6em cursive;
+  color: #095484;
+}
 
 .App-logo {
   height: 40vmin;

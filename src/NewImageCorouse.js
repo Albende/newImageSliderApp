@@ -5,9 +5,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/icons-material/CheckBox";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 import FavoriteBorder from "@mui/icons-material/Favorite";
 import InputSlider from "./InputSlider";
 import { itemData } from "./itemData";
+import { comment } from "./App.css";
 
 const NewImageCorouse = ({ photos }) => {
   return (
@@ -27,6 +29,7 @@ const NewImageCorouse = ({ photos }) => {
               }
               label={`${item.likeCount} Likes`}
             />
+            <ImageListItemBar title={item.description} position="below" />
           </div>
         </ImageListItem>
       ))}
